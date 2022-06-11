@@ -1,0 +1,17 @@
+C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\bin\Debug\AlamirMobileCDMA.exe.config
+C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\bin\Debug\AlamirMobileCDMA.exe
+C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\bin\Debug\AlamirMobileCDMA.pdb
+C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.csprojAssemblyReference.cache
+C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.Form1.resources
+C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.Properties.Resources.resources
+C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.csproj.GenerateResource.cache
+C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.csproj.CopyComplete
+C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.exe
+C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.pdb
+C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.about.resources
+C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.active_cdma.resources
+C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.dashboard.resources
+C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.device_info.resources
+C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.scan_device.resources
