@@ -142,5 +142,14 @@
   <ItemGroup>
     <None Include="Resources\iphone.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-github-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-facebook-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-instagram-48.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
