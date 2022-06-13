@@ -103,16 +103,16 @@
             this.bunifuFlatButton12.IconRightVisible = false;
             this.bunifuFlatButton12.IconRightZoom = 0D;
             this.bunifuFlatButton12.IconVisible = true;
-            this.bunifuFlatButton12.IconZoom = 80D;
+            this.bunifuFlatButton12.IconZoom = 70D;
             this.bunifuFlatButton12.IsTab = true;
-            this.bunifuFlatButton12.Location = new System.Drawing.Point(325, 70);
+            this.bunifuFlatButton12.Location = new System.Drawing.Point(325, 77);
             this.bunifuFlatButton12.Margin = new System.Windows.Forms.Padding(3, 7, 3, 7);
             this.bunifuFlatButton12.Name = "bunifuFlatButton12";
             this.bunifuFlatButton12.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
             this.bunifuFlatButton12.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
             this.bunifuFlatButton12.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.bunifuFlatButton12.selected = false;
-            this.bunifuFlatButton12.Size = new System.Drawing.Size(175, 48);
+            this.bunifuFlatButton12.Size = new System.Drawing.Size(167, 36);
             this.bunifuFlatButton12.TabIndex = 11;
             this.bunifuFlatButton12.Text = "تحديث";
             this.bunifuFlatButton12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -290,7 +290,7 @@
             this.UDID_label.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.UDID_label.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UDID_label.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.UDID_label.Location = new System.Drawing.Point(324, 494);
+            this.UDID_label.Location = new System.Drawing.Point(323, 494);
             this.UDID_label.Name = "UDID_label";
             this.UDID_label.Size = new System.Drawing.Size(2, 25);
             this.UDID_label.TabIndex = 36;
@@ -752,7 +752,7 @@
             this.Slot_label.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Slot_label.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Slot_label.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Slot_label.Location = new System.Drawing.Point(151, 494);
+            this.Slot_label.Location = new System.Drawing.Point(145, 494);
             this.Slot_label.Name = "Slot_label";
             this.Slot_label.Size = new System.Drawing.Size(34, 25);
             this.Slot_label.TabIndex = 55;
@@ -1137,7 +1137,7 @@
             this.bunifuCircleProgressbar1.LabelVisible = true;
             this.bunifuCircleProgressbar1.LineProgressThickness = 8;
             this.bunifuCircleProgressbar1.LineThickness = 5;
-            this.bunifuCircleProgressbar1.Location = new System.Drawing.Point(275, 88);
+            this.bunifuCircleProgressbar1.Location = new System.Drawing.Point(277, 81);
             this.bunifuCircleProgressbar1.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.bunifuCircleProgressbar1.MaxValue = 100;
             this.bunifuCircleProgressbar1.Name = "bunifuCircleProgressbar1";
@@ -1154,7 +1154,7 @@
             this.bunifuCustomLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(276, 238);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(278, 231);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(176, 23);
             this.bunifuCustomLabel1.TabIndex = 62;
