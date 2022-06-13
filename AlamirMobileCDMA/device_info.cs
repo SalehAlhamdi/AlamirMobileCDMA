@@ -106,6 +106,125 @@ namespace AlamirMobileCDMA
                 {
                     ProductType_label.Text = "iPhone 7 Plus";
                 }
+                else if (ProductType.Contains("iPhone14,3"))
+                {
+                    ProductType_label.Text = "iPhone 13 Pro Max";
+                }
+                else if (ProductType.Contains("iPhone12,5"))
+                {
+                    ProductType_label.Text = "iPhone 11 Pro Max";
+                }
+                else if (ProductType.Contains("iPhone14,5"))
+                {
+                    ProductType_label.Text = "iPhone 13";
+                }
+                else if (ProductType.Contains("iPhone13,4"))
+                {
+                    ProductType_label.Text = "iPhone 12 Pro Max";
+                }
+                else if (ProductType.Contains("iPhone13,3"))
+                {
+                    ProductType_label.Text = "iPhone 12 Pro";
+                }
+                else if (ProductType.Contains("iPhone14,2"))
+                {
+                    ProductType_label.Text = "iPhone 13 Pro";
+                }
+                else if (ProductType.Contains("iPhone12,1"))
+                {
+                    ProductType_label.Text = "iPhone 11";
+                }
+                else if (ProductType.Contains("iPhone12,3"))
+                {
+                    ProductType_label.Text = "iPhone 11 Pro";
+                }
+                else if (ProductType.Contains("iPhone13,2"))
+                {
+                    ProductType_label.Text = "iPhone 12";
+                }
+                else if (ProductType.Contains("iPhone11,2"))
+                {
+                    ProductType_label.Text = "iPhone XS";
+                }
+                else if (ProductType.Contains("iPhone11,4"))
+                {
+                    ProductType_label.Text = "iPhone XS Max (China)";
+                }
+                else if (ProductType.Contains("iPhone11,8"))
+                {
+                    ProductType_label.Text = "iPhone XR";
+                }
+                else if (ProductType.Contains("iPhone10,2"))
+                {
+                    ProductType_label.Text = "iPhone 8 Plus (Global)";
+                }
+                else if (ProductType.Contains("iPhone10,3"))
+                {
+                    ProductType_label.Text = "iPhone X (Global)";
+                }
+                else if (ProductType.Contains("iPhone10,6"))
+                {
+                    ProductType_label.Text = "iPhone X (GSM)";
+                }
+                else if (ProductType.Contains("iPhone11,6"))
+                {
+                    ProductType_label.Text = "iPhone XS Max";
+                }
+                else if (ProductType.Contains("iPhone10,1"))
+                {
+                    ProductType_label.Text = "iPhone 8 (Global)";
+                }
+                else if (ProductType.Contains("iPhone10,4"))
+                {
+                    ProductType_label.Text = "iPhone 8 (GSM)";
+                }
+                else if (ProductType.Contains("iPhone10,5"))
+                {
+                    ProductType_label.Text = "iPhone 8 Plus (GSM)";
+                }
+                else if (ProductType.Contains("iPhone9,1"))
+                {
+                    ProductType_label.Text = "iPhone 7 (Global)";
+                }
+                else if (ProductType.Contains("iPhone9,2"))
+                {
+                    ProductType_label.Text = "iPhone 7 Plus (Global)";
+                }
+                else if (ProductType.Contains("iPhone9,3"))
+                {
+                    ProductType_label.Text = "iPhone 7 (GSM)";
+                }
+                else if (ProductType.Contains("iPhone7,1"))
+                {
+                    ProductType_label.Text = "iPhone 6+";
+                }
+                else if (ProductType.Contains("iPhone7,2"))
+                {
+                    ProductType_label.Text = "iPhone 6";
+                }
+                else if (ProductType.Contains("iPhone8,1"))
+                {
+                    ProductType_label.Text = "iPhone 6s";
+                }
+                else if (ProductType.Contains("iPhone8,2"))
+                {
+                    ProductType_label.Text = "iPhone 6s+";
+                }
+                else if (ProductType.Contains("iPhone6,2"))
+                {
+                    ProductType_label.Text = "iPhone 5s (Global)";
+                }
+                else if (ProductType.Contains("iPhone5,4"))
+                {
+                    ProductType_label.Text = "iPhone 5c (Global)";
+                }
+                else if (ProductType.Contains("iPhone5,3"))
+                {
+                    ProductType_label.Text = "iPhone 5c (GSM)";
+                }
+
+
+
 
 
                 //device class
@@ -188,20 +307,21 @@ namespace AlamirMobileCDMA
                     ActivationState_label.Text = "ليش منشط";
                 }
 
-
                 //device class
-                string Slot = getInfo("ideviceinfo.exe -k CarrierBundleInfoArray");
-                int index = Slot.IndexOf("Slot");
-                string result = Slot.Substring(index, 10);
-                if (result.Contains("kOne"))
-                {
-                    Slot_label.Text = "شريحة";
-                }
-                else
+                string Slot = getInfo("ideviceinfo.exe -k BasebandKeyHashInformation");
+                //sim1
+                int index1 = Slot.IndexOf("SKeyStatus");
+                string sim1 = Slot.Substring(index1, 15);
+                //sim2
+                int index2 = Slot.IndexOf("AKeyStatus");
+                string sim2 = Slot.Substring(index2, 15);
+                if (sim1.Contains("2") || sim2.Contains("2")) 
                 {
                     Slot_label.Text = "شرحتين";
-
                 }
+           
+                else
+                    Slot_label.Text = "شريحة";
 
 
                 //device class
@@ -215,6 +335,11 @@ namespace AlamirMobileCDMA
                 else if (RegionInfo.Contains("J"))
                 {
                     RegionInfo_label.Text = "ياباني";
+
+                }
+                else if (RegionInfo.Contains("ZA/A"))
+                {
+                    RegionInfo_label.Text = "هون كونق";
 
                 }
                 else if (RegionInfo.Contains("AB"))
