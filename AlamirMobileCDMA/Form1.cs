@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,23 @@ namespace AlamirMobileCDMA
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
             InitializeComponent();
+        }
+        public string getInfo(string cammond)
+        {
+            string startupPath = @System.IO.Directory.GetCurrentDirectory() + @"\libimobiledevice\";
+            var proc1 = new ProcessStartInfo("cmd");
+            proc1.UseShellExecute = false;
+            proc1.RedirectStandardOutput = true;
+            proc1.CreateNoWindow = true;
+            proc1.RedirectStandardInput = true;
+            proc1.Arguments = "/c " + startupPath + cammond;
+            proc1.WindowStyle = ProcessWindowStyle.Hidden;
+            var proc = Process.Start(proc1);
+            return proc.StandardOutput.ReadToEnd();
         }
         public void loadform(object Form)
         {
@@ -28,6 +43,20 @@ namespace AlamirMobileCDMA
             this.main_panel.Controls.Add(f);
             this.main_panel.Tag = f;
             f.Show();
+            
+            
+            //Check if device connected
+            string checkConnectedDevice = getInfo("ideviceinfo.exe -k DeviceName");
+
+            if (checkConnectedDevice.Contains("ERROR: No device found!"))
+            {
+                bunifuCustomLabel2.Text = "الجهاز غير متصل";
+            }
+            else
+            {
+                bunifuCustomLabel2.Text = "الجهاز متصل";
+            }
+
         }
 
         private void bunifuFlatButton8_Click(object sender, EventArgs e)
@@ -73,5 +102,9 @@ namespace AlamirMobileCDMA
 
         }
 
+        private void bunifuFlatButton11_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }
