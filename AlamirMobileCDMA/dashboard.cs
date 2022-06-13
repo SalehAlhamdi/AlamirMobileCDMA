@@ -16,5 +16,27 @@ namespace AlamirMobileCDMA
         {
             InitializeComponent();
         }
+
+        private void bunifuImageButton4_Click(object sender, EventArgs e)
+        {
+            // Launch browser to GitHub...
+            System.Diagnostics.Process.Start("https://github.com/SalehAlhamdi");
+        }
+
+        private void bunifuImageButton5_Click(object sender, EventArgs e)
+        {
+            // Launch browser to facebook...
+
+            System.Diagnostics.Process.Start("https://www.facebook.com/saleh.m.alhamdi/");
+
+        }
+
+        private void bunifuImageButton3_Click(object sender, EventArgs e)
+        {
+            // Launch browser to facebook...
+
+            System.Diagnostics.Process.Start("https://www.instagram.com/main__zed/");
+        
+        }
     }
 }
