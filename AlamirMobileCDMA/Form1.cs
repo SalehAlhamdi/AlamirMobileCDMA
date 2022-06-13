@@ -106,5 +106,10 @@ namespace AlamirMobileCDMA
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            loadform(new dashboard());
+        }
     }
 }
