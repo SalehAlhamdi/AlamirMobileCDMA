@@ -43,19 +43,7 @@ namespace AlamirMobileCDMA
             this.main_panel.Controls.Add(f);
             this.main_panel.Tag = f;
             f.Show();
-            
-            
-            //Check if device connected
-            string checkConnectedDevice = getInfo("ideviceinfo.exe -k DeviceName");
-
-            if (checkConnectedDevice.Contains("ERROR: No device found!"))
-            {
-                bunifuCustomLabel2.Text = "الجهاز غير متصل";
-            }
-            else
-            {
-                bunifuCustomLabel2.Text = "الجهاز متصل";
-            }
+         
 
         }
 
@@ -110,6 +98,17 @@ namespace AlamirMobileCDMA
         private void Form1_Load(object sender, EventArgs e)
         {
             loadform(new dashboard());
+            //Check if device connected
+            string checkConnectedDevice = getInfo("ideviceinfo.exe -k DeviceName");
+
+            if (checkConnectedDevice.Contains("ERROR: No device found!"))
+            {
+                bunifuCustomLabel2.Text = "الجهاز غير متصل";
+            }
+            else
+            {
+                bunifuCustomLabel2.Text = "الجهاز متصل";
+            }
         }
     }
 }

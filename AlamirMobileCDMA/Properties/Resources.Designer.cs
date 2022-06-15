@@ -73,9 +73,29 @@ namespace AlamirMobileCDMA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_checked_checkbox_80 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-checked-checkbox-80", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_facebook_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-facebook-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_file_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-file-48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -96,6 +116,16 @@ namespace AlamirMobileCDMA.Properties {
         internal static System.Drawing.Bitmap icons8_instagram_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-instagram-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_update_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-update-100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

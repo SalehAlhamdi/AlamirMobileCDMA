@@ -304,7 +304,7 @@ namespace AlamirMobileCDMA
                 }
                 else
                 {
-                    ActivationState_label.Text = "ليش منشط";
+                    ActivationState_label.Text = "غير منشط";
                 }
 
                 //device class

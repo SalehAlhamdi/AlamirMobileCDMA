@@ -151,5 +151,14 @@
   <ItemGroup>
     <None Include="Resources\icons8-instagram-48.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-update-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-file-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-checked-checkbox-80.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
