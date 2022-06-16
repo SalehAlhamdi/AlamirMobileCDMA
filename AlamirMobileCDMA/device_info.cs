@@ -38,15 +38,60 @@ namespace AlamirMobileCDMA
 
         private void device_info_Load(object sender, EventArgs e)
         {
-            try
-            {
-                bunifuCustomLabel2.Visible = false;
 
-                //device name
-                string DeviceName = getInfo("ideviceinfo.exe -k DeviceName");
 
+
+
+            //device name
+            string DeviceName = getInfo("idevicename");
+            if (DeviceName.Length > 0) {
                 deviceName_label.Text = DeviceName;
-
+                bunifuCustomLabel2.Visible = false;
+                bunifuFlatButton1.Visible = true;
+                bunifuFlatButton2.Visible = true;
+                bunifuFlatButton3.Visible = true;
+                bunifuFlatButton4.Visible = true;
+                bunifuFlatButton5.Visible = true;
+                bunifuFlatButton6.Visible = true;
+                bunifuFlatButton7.Visible = true;
+                bunifuFlatButton8.Visible = true;
+                bunifuFlatButton9.Visible = true;
+                bunifuFlatButton10.Visible = true;
+                bunifuFlatButton11.Visible = true;
+                bunifuFlatButton12.Visible = true;
+                bunifuFlatButton13.Visible = true;
+                bunifuFlatButton14.Visible = true;
+                bunifuFlatButton15.Visible = true;
+                bunifuFlatButton16.Visible = true;
+                bunifuFlatButton17.Visible = true;
+                bunifuFlatButton18.Visible = true;
+                bunifuFlatButton19.Visible = true;
+                bunifuFlatButton20.Visible = true;
+                bunifuFlatButton21.Visible = true;
+                panel2.Visible = true;
+                panel1.Visible = true;
+                ActivationState_label.Visible = true;
+                imei_label.Visible = true;
+                EthernetAddress_label.Visible = true;
+                deviceName_label.Visible = true;
+                DeviceClass_label.Visible = true;
+                CPU_label.Visible = true;
+                color_label.Visible = true;
+                ChipID_label.Visible = true;
+                bunifuCustomLabel1.Visible = true;
+                BuildVersion_label.Visible = true;
+                ActivationState_label.Visible = true;
+                ModelNumber_label.Visible = true;
+                vBaseband_label.Visible = true;
+                MLBSerialNumber_label.Visible = true;
+                UDID_label.Visible = true;
+                ProductType_label.Visible = true;
+                RegionInfo_label.Visible = true;
+                SerialNumber_label.Visible = true;
+                Model_label.Visible = true;
+                ProductVersion_label.Visible = true;
+                Wifi_label.Visible = true;
+                Slot_label.Visible = true;
 
                 //device class
                 string DeviceClass = getInfo("ideviceinfo.exe -k DeviceClass");
@@ -315,11 +360,11 @@ namespace AlamirMobileCDMA
                 //sim2
                 int index2 = Slot.IndexOf("AKeyStatus");
                 string sim2 = Slot.Substring(index2, 15);
-                if (sim1.Contains("2") || sim2.Contains("2")) 
+                if (sim1.Contains("2") || sim2.Contains("2"))
                 {
                     Slot_label.Text = "شرحتين";
                 }
-           
+
                 else
                     Slot_label.Text = "شريحة";
 
@@ -415,9 +460,9 @@ namespace AlamirMobileCDMA
 
                 BuildVersion_label.Text = BuildVersion;
             }
-            catch
+                
+            else
             {
-                bunifuCircleProgressbar1.Visible = false;
                 deviceInfoPanel.Visible = false;
                 bunifuCustomLabel2.Visible = true;
                 bunifuCustomLabel1.Visible = false;
@@ -489,8 +534,8 @@ namespace AlamirMobileCDMA
 
         private void bunifuFlatButton12_Click(object sender, EventArgs e)
         {
-            deviceInfoPanel.Visible = true;
             bunifuCircleProgressbar1.Value = 0;
+            deviceInfoPanel.Visible = true;
             loader_Tick(sender, e);
             device_info_Load(sender,e);
 

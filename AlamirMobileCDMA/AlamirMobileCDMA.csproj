@@ -51,11 +51,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="about.cs">
+    <Compile Include="update.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="about.Designer.cs">
-      <DependentUpon>about.cs</DependentUpon>
+    <Compile Include="update.Designer.cs">
+      <DependentUpon>update.cs</DependentUpon>
     </Compile>
     <Compile Include="active_cdma.cs">
       <SubType>Form</SubType>
@@ -89,8 +89,8 @@
     <Compile Include="scan_device.Designer.cs">
       <DependentUpon>scan_device.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="about.resx">
-      <DependentUpon>about.cs</DependentUpon>
+    <EmbeddedResource Include="update.resx">
+      <DependentUpon>update.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="active_cdma.resx">
       <DependentUpon>active_cdma.cs</DependentUpon>
@@ -159,6 +159,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-checked-checkbox-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-update-64.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

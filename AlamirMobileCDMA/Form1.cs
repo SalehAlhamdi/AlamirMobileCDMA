@@ -74,7 +74,7 @@ namespace AlamirMobileCDMA
 
         private void bunifuFlatButton5_Click(object sender, EventArgs e)
         {
-            loadform(new about());
+            ;
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
@@ -109,6 +109,11 @@ namespace AlamirMobileCDMA
             {
                 bunifuCustomLabel2.Text = "الجهاز متصل";
             }
+        }
+
+        private void bunifuFlatButton6_Click(object sender, EventArgs e)
+        {
+            loadform(new update());
         }
     }
 }

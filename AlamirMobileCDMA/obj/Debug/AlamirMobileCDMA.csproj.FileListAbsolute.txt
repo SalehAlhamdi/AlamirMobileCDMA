@@ -10,8 +10,8 @@ C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\
 C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.csproj.CopyComplete
 C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.exe
 C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.pdb
-C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.about.resources
 C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.active_cdma.resources
 C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.dashboard.resources
 C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.device_info.resources
 C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.scan_device.resources
+C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.update.resources

@@ -15,6 +15,7 @@ namespace AlamirMobileCDMA
 {
     public partial class active_cdma : Form
     {
+        public string p_path;
         public string startupPath = @System.IO.Directory.GetCurrentDirectory() + @"\libimobiledevice\";
         public int count;
         string selectedFileName;
@@ -148,24 +149,406 @@ namespace AlamirMobileCDMA
                     string checkDevice = getInfo("idevicename");
                     if (checkDevice.Length > 0)
                     {
-
-
                         string path;
-                        //downloading files for IPCC
-                        if (bunifuCheckbox1.Checked.ToString() == "14.6")
+                    //downloading files for IPCC
+                        if (comboBox1.SelectedText == "12")
                         {
                             using (WebClient wc = new WebClient())
                             {
-                                wc.DownloadFileAsync(
-                                    // Param1 = Link of file
-                                    new System.Uri("https://drive.google.com/uc?export=download&id=1u2euXTbxueQ8jiG4xR18_TzKX1qgkrlb"),
-                                      // Param2 = Path to save
-                                      path = startupPath + @"\14,6.ipcc"
-                                     );
+                                wc.DownloadFile("https://drive.google.com/uc?export=download&id=1AWHhXaQl3KKhwuXWn3Josz_lv_u4KHc9", startupPath + @"\12.ipcc");
+                                path = startupPath + @"\12.ipcc";
+                                cdma_Process(path, sender, e);
                             }
-                            cdma_Process(path, sender, e);
+
+                            for (int x = 0; x < 100; x++)
+                            {
+                                timer1_Tick(sender, e);
+                            }
                         }
-                    }
+                        else if (comboBox1.SelectedText == "13")
+                            {
+                                using (WebClient wc = new WebClient())
+                                {
+                                    wc.DownloadFile("https://drive.google.com/uc?export=download&id=1ZPj8SHyYWEAC9o7J4MXrKy2CWTHZX8RZ", startupPath + @"\13.ipcc");
+                                    path = startupPath + @"\13.ipcc";
+                                    cdma_Process(path, sender, e);
+                                }
+
+                                for (int x = 0; x < 100; x++)
+                                {
+                                    timer1_Tick(sender, e);
+                                }
+                            }
+                        else if (comboBox1.SelectedText == "14.0.1" || comboBox1.SelectedText == "14.0")
+                            {
+                                using (WebClient wc = new WebClient())
+                                {
+                                    wc.DownloadFile("https://drive.google.com/uc?export=download&id=1vqsPhmGQiFonZke18k4Y-kB2_kvsTUrg", startupPath + @"\14.0.1.ipcc");
+                                    path = startupPath + @"\14.0.1.ipcc";
+                                    cdma_Process(path, sender, e);
+                                }
+
+                                for (int x = 0; x < 100; x++)
+                                {
+                                    timer1_Tick(sender, e);
+                                }
+                            }
+                        else if (comboBox1.SelectedText == "14.2"|| comboBox1.SelectedText == "14.1")
+                                {
+                                    using (WebClient wc = new WebClient())
+                                    {
+                                        wc.DownloadFile("https://drive.google.com/uc?export=download&id=1fRRo7HmzF1lskKrw3FJgMqKzFrBCbEHs", startupPath + @"\14.2.ipcc");
+                                        path = startupPath + @"\14.2.ipcc";
+                                        cdma_Process(path, sender, e);
+                                    }
+
+                                    for (int x = 0; x < 100; x++)
+                                    {
+                                        timer1_Tick(sender, e);
+                                    }
+                                }
+                        else if (comboBox1.SelectedText == "14.3")
+                            {
+                                using (WebClient wc = new WebClient())
+                                {
+                                    wc.DownloadFile("https://drive.google.com/uc?export=download&id=1DOjE9VYlJ37MMschIFF3-6EgStUCWKr9", startupPath + @"\14.3.ipcc");
+                                    path = startupPath + @"\14.3.ipcc";
+                                    cdma_Process(path, sender, e);
+                                }
+
+                                for (int x = 0; x < 100; x++)
+                                {
+                                    timer1_Tick(sender, e);
+                                }
+                            }
+                        else if (comboBox1.SelectedText == "14.4")
+                            {
+                                using (WebClient wc = new WebClient())
+                                {
+                                    wc.DownloadFile("https://drive.google.com/uc?export=download&id=1lY9L6MyUlYVhBvSfZRDCe5Efz7GEnczs", startupPath + @"\14.4.ipcc");
+                                    path = startupPath + @"\14.4.ipcc";
+                                    cdma_Process(path, sender, e);
+                                }
+
+                                for (int x = 0; x < 100; x++)
+                                {
+                                    timer1_Tick(sender, e);
+                                }
+                            }
+                        else if (comboBox1.SelectedText == "14.4.1")
+                            {
+                                using (WebClient wc = new WebClient())
+                                {
+                                    wc.DownloadFile("https://drive.google.com/uc?export=download&id=1lY9L6MyUlYVhBvSfZRDCe5Efz7GEnczs", startupPath + @"\14.4.1.ipcc");
+                                    path = startupPath + @"\14.4.1.ipcc";
+                                    cdma_Process(path, sender, e);
+                                }
+
+                                for (int x = 0; x < 100; x++)
+                                {
+                                    timer1_Tick(sender, e);
+                                }
+                            }
+                        else if (comboBox1.SelectedText == "14.4.2")
+                            {
+                                using (WebClient wc = new WebClient())
+                                {
+                                    wc.DownloadFile("https://drive.google.com/uc?export=download&id=10Wi4U8NOrjyotb90ywBPHWEmcGYf6XSD", startupPath + @"\14.4.2.ipcc");
+                                    path = startupPath + @"\14.4.2.ipcc";
+                                    cdma_Process(path, sender, e);
+                                }
+
+                                for (int x = 0; x < 100; x++)
+                                {
+                                    timer1_Tick(sender, e);
+                                }
+                            }
+                        else if (comboBox1.SelectedText == "14.5" || comboBox1.SelectedText=="14.5.1")
+                        {
+                            using (WebClient wc = new WebClient())
+                            {
+                                wc.DownloadFile("https://drive.google.com/uc?export=download&id=1k6LidjiT-HgwfhKAr3Z1ZHac_8RCY9Cd", startupPath + @"\14.5.ipcc");
+                                path = startupPath + @"\14.5.ipcc";
+                                cdma_Process(path, sender, e);
+                            }
+
+                            for (int x = 0; x < 100; x++)
+                            {
+                                timer1_Tick(sender, e);
+                            }
+                        }
+                        else if (comboBox1.SelectedText == "14.6")
+                            {
+                                using (WebClient wc = new WebClient())
+                                {
+                                wc.DownloadFile("https://drive.google.com/uc?export=download&id=1u2euXTbxueQ8jiG4xR18_TzKX1qgkrlb", startupPath + @"\14.6.ipcc");
+                                path = startupPath + @"\14.6.ipcc";
+                                cdma_Process(path, sender, e);
+                            }
+                        
+                                for (int x = 0; x < 100; x++)
+                                {
+                                    timer1_Tick(sender, e);
+                                }
+                            }
+                        else if (comboBox1.SelectedText == "14.6.1")
+                        {
+                            using (WebClient wc = new WebClient())
+                            {
+                                wc.DownloadFile("https://drive.google.com/uc?export=download&id=1u2euXTbxueQ8jiG4xR18_TzKX1qgkrlb", startupPath + @"\14.6.1.ipcc");
+                                path = startupPath + @"\14.6.1.ipcc";
+                                cdma_Process(path, sender, e);
+                            }
+
+                            for (int x = 0; x < 100; x++)
+                            {
+                                timer1_Tick(sender, e);
+                            }
+                        }
+                        else if (comboBox1.SelectedText == "14.7")
+                        {
+                            using (WebClient wc = new WebClient())
+                            {
+                                wc.DownloadFile("https://drive.google.com/uc?export=download&id=1Ic0szEmta9k_RutgQVq-p45aGzHFOnDV", startupPath + @"\14.7.ipcc");
+                                path = startupPath + @"\14.7.ipcc";
+                                cdma_Process(path, sender, e);
+                            }
+
+                            for (int x = 0; x < 100; x++)
+                            {
+                                timer1_Tick(sender, e);
+                            }
+                        }
+                        else if (comboBox1.SelectedText == "14.7.1")
+                            {
+                                using (WebClient wc = new WebClient())
+                                {
+                                    wc.DownloadFile("https://drive.google.com/uc?export=download&id=1Ic0szEmta9k_RutgQVq-p45aGzHFOnDV", startupPath + @"\14.7.1.ipcc");
+                                    path = startupPath + @"\14.7.1.ipcc";
+                                    cdma_Process(path, sender, e);
+                                }
+
+                                for (int x = 0; x < 100; x++)
+                                {
+                                    timer1_Tick(sender, e);
+                                }
+                            }
+                        else if (comboBox1.SelectedText == "14.8")
+                            {
+                                using (WebClient wc = new WebClient())
+                                {
+                                    wc.DownloadFile("https://drive.google.com/uc?export=download&id=1RChalCPmNEfq0kkgRduQ9FfrBY8YHUHS", startupPath + @"\14.8.ipcc");
+                                    path = startupPath + @"\14.8.ipcc";
+                                    cdma_Process(path, sender, e);
+                                }
+
+                                for (int x = 0; x < 100; x++)
+                                {
+                                    timer1_Tick(sender, e);
+                                }
+                            }
+                        else if (comboBox1.SelectedText == "14.8.1")
+                            {
+                                using (WebClient wc = new WebClient())
+                                {
+                                    wc.DownloadFile("https://drive.google.com/uc?export=download&id=1RChalCPmNEfq0kkgRduQ9FfrBY8YHUHS", startupPath + @"\14.8.1.ipcc");
+                                    path = startupPath + @"\14.8.1.ipcc";
+                                    cdma_Process(path, sender, e);
+                                }
+
+                                for (int x = 0; x < 100; x++)
+                                {
+                                    timer1_Tick(sender, e);
+                                }
+                            }
+                        else if (comboBox1.SelectedText == "15.0")
+                            {
+                                using (WebClient wc = new WebClient())
+                                {
+                                    wc.DownloadFile("https://drive.google.com/uc?export=download&id=1b-5h9R75XFo8eCbRii8V24FOIDhOGSKx", startupPath + @"\15.0.ipcc");
+                                    path = startupPath + @"\15.0.ipcc";
+                                    cdma_Process(path, sender, e);
+                                }
+
+                                for (int x = 0; x < 100; x++)
+                                {
+                                    timer1_Tick(sender, e);
+                                }
+                            }
+                        else if (comboBox1.SelectedText == "15.0.1")
+                        {
+                            using (WebClient wc = new WebClient())
+                            {
+                                wc.DownloadFile("https://drive.google.com/uc?export=download&id=1m3CwaaCYzW_kRFBg_0laEBw9TO5XeHiZ", startupPath + @"\15.0.1.ipcc");
+                                path = startupPath + @"\15.0.1.ipcc";
+                                cdma_Process(path, sender, e);
+                            }
+
+                            for (int x = 0; x < 100; x++)
+                            {
+                                timer1_Tick(sender, e);
+                            }
+                        }
+                        else if (comboBox1.SelectedText == "15.0.2")
+                        {
+                            using (WebClient wc = new WebClient())
+                            {
+                                wc.DownloadFile("https://drive.google.com/uc?export=download&id=1m3CwaaCYzW_kRFBg_0laEBw9TO5XeHiZ", startupPath + @"\15.0.2.ipcc");
+                                path = startupPath + @"\15.0.2.ipcc";
+                                cdma_Process(path, sender, e);
+                            }
+
+                            for (int x = 0; x < 100; x++)
+                            {
+                                timer1_Tick(sender, e);
+                            }
+                        }
+                        else if (comboBox1.SelectedText == "15.1")
+                            {
+                                using (WebClient wc = new WebClient())
+                                {
+                                    wc.DownloadFile("https://drive.google.com/uc?export=download&id=18U-EhOTgoFWEU5oJHhgFS_PVXTB1J2w7", startupPath + @"\15.1.ipcc");
+                                    path = startupPath + @"\15.1.ipcc";
+                                    cdma_Process(path, sender, e);
+                                }
+
+                                for (int x = 0; x < 100; x++)
+                                {
+                                    timer1_Tick(sender, e);
+                                }
+                            }
+
+                        else if (comboBox1.SelectedText == "15.1.1")
+                            {
+                                using (WebClient wc = new WebClient())
+                                {
+                                    wc.DownloadFile("https://drive.google.com/uc?export=download&id=11-5Yuoel60UZkxVfplgO6ujsMGgTA3CT", startupPath + @"\15.1.1.ipcc");
+                                    path = startupPath + @"\15.1.1.ipcc";
+                                    cdma_Process(path, sender, e);
+                                }
+
+                                for (int x = 0; x < 100; x++)
+                                {
+                                    timer1_Tick(sender, e);
+                                }
+                            }
+                
+                        else if (comboBox1.SelectedText == "15.2")
+                        {
+                            using (WebClient wc = new WebClient())
+                            {
+                                wc.DownloadFile("https://drive.google.com/uc?export=download&id=1MuDf-ufhDRZH_V7P40H2LeO8iB2kcq43", startupPath + @"\15.2.ipcc");
+                                path = startupPath + @"\15.2.ipcc";
+                                cdma_Process(path, sender, e);
+                            }
+
+                            for (int x = 0; x < 100; x++)
+                            {
+                                timer1_Tick(sender, e);
+                            }
+                        }
+
+                        else if (comboBox1.SelectedText == "15.2.1")
+                        {
+                            using (WebClient wc = new WebClient())
+                            {
+                                wc.DownloadFile("https://drive.google.com/uc?export=download&id=1MuDf-ufhDRZH_V7P40H2LeO8iB2kcq43", startupPath + @"\15.2.1.ipcc");
+                                path = startupPath + @"\15.2.1.ipcc";
+                                cdma_Process(path, sender, e);
+                            }
+
+                            for (int x = 0; x < 100; x++)
+                            {
+                                timer1_Tick(sender, e);
+                            }
+                        }
+                    else if (comboBox1.SelectedText == "15.3")
+                        {
+                            using (WebClient wc = new WebClient())
+                            {
+                                wc.DownloadFile("https://drive.google.com/uc?export=download&id=1IDadOnsqXvujKFaIiE2xFh0YObbOP6ZV", startupPath + @"\15.3.ipcc");
+                                path = startupPath + @"\15.3.ipcc";
+                                cdma_Process(path, sender, e);
+                            }
+
+                            for (int x = 0; x < 100; x++)
+                            {
+                                timer1_Tick(sender, e);
+                            }
+                        }
+                
+                        else if (comboBox1.SelectedText == "15.3.1")
+                        {
+                            using (WebClient wc = new WebClient())
+                            {
+                                wc.DownloadFile("https://drive.google.com/uc?export=download&id=1VALqi3cwUFXG9ykzDo70QzwfpC9FVOIO", startupPath + @"\15.3.1.ipcc");
+                                path = startupPath + @"\15.3.1.ipcc";
+                                cdma_Process(path, sender, e);
+                            }
+
+                            for (int x = 0; x < 100; x++)
+                            {
+                                timer1_Tick(sender, e);
+                            }
+                        }
+                        else if (comboBox1.SelectedText == "15.4")
+                                {
+                                    using (WebClient wc = new WebClient())
+                                    {
+                                        wc.DownloadFile("https://drive.google.com/uc?export=download&id=1mdKzz9T1MxKXzlWK-cshBn3NV66wqFTo", startupPath + @"\15.4.ipcc");
+                                        path = startupPath + @"\15.4.ipcc";
+                                        cdma_Process(path, sender, e);
+                                    }
+
+                                    for (int x = 0; x < 100; x++)
+                                    {
+                                        timer1_Tick(sender, e);
+                                    }
+                                }
+                        else if (comboBox1.SelectedText == "15.4.1")
+                        {
+                            using (WebClient wc = new WebClient())
+                            {
+                                wc.DownloadFile("https://drive.google.com/uc?export=download&id=1Dc-LoaFEbmZXuM1WxV7njgSjcyrHe5K5", startupPath + @"\15.4.1.ipcc");
+                                path = startupPath + @"\15.4.1.ipcc";
+                                cdma_Process(path, sender, e);
+                            }
+
+                            for (int x = 0; x < 100; x++)
+                            {
+                                timer1_Tick(sender, e);
+                            }
+                        }
+                        else if (comboBox1.SelectedText == "15.5")
+                            {
+                                using (WebClient wc = new WebClient())
+                                {
+                                    wc.DownloadFile("https://drive.google.com/uc?export=download&id=1Vm2EOxdhuThVAPhPr1zDhqEXD-dlcSeQ", startupPath + @"\15.5.ipcc");
+                                    path = startupPath + @"\15.5.ipcc";
+                                    cdma_Process(path, sender, e);
+                                }
+
+                                for (int x = 0; x < 100; x++)
+                                {
+                                    timer1_Tick(sender, e);
+                                }
+                            }
+                        else if (comboBox1.SelectedText == "15.6")
+                                {
+                                    using (WebClient wc = new WebClient())
+                                    {
+                                        wc.DownloadFile("https://drive.google.com/uc?export=download&id=1zOCZKZIFzKy4fFpxnxd2FzIDl9x5jlBh", startupPath + @"\15.6.ipcc");
+                                        path = startupPath + @"\15.6.ipcc";
+                                        cdma_Process(path, sender, e);
+                                    }
+
+                                    for (int x = 0; x < 100; x++)
+                                    {
+                                        timer1_Tick(sender, e);
+                                    }
+                                }
+
+                }
                     else
                     {
                         MessageBox.Show("يرجى التاكد من الجهاز متصل");
@@ -186,8 +569,10 @@ namespace AlamirMobileCDMA
         {
             if (File.Exists(path))
             {
-
+                MessageBox.Show("تم تحميل الملف");
+                p_path = path;
                 string ios_ver = getInfo("ideviceinfo -k ProductVersion");
+                bunifuProgressBar1.Value = 0;
                 if (ios_ver.Contains("15"))
                 {
                     DialogResult checkSIM = MessageBox.Show("يرجى عدم تركيب اي شريحة لانه يسبب تعليق الجهاز", "الشريحة", MessageBoxButtons.YesNo);
@@ -208,14 +593,12 @@ namespace AlamirMobileCDMA
                         if (checkSIM == DialogResult.Yes)
                         {
                             getInfo("idevicediagnostics restart");
-                            File.Delete(path);
 
                         }
                         else
                         {
                             bunifuCustomLabel1.Text = "لم يتم اعادة التشغيل الهاتف";
                             bunifuCustomLabel1.Visible = true;
-                            File.Delete(path);
                         }
 
                         bunifuFlatButton2.Visible = true;
@@ -241,7 +624,6 @@ namespace AlamirMobileCDMA
                     if (count == 100)
                     {
                         bunifuFlatButton2.Visible = true;
-                        File.Delete(path);
 
 
                     }
@@ -294,8 +676,15 @@ namespace AlamirMobileCDMA
                 string imei = getInfo("ideviceinfo -k InternationalMobileEquipmentIdentity");
                 string ProductVersion = getInfo("ideviceinfo -k ProductVersion");
                 string CarrierBundleInfoArray = getInfo("ideviceinfo -k CarrierBundleInfoArray");
-                int index = CarrierBundleInfoArray.IndexOf("IntegratedCircuitCardIdentity");
-                string ICCID = CarrierBundleInfoArray.Substring(index+30, 20);
+
+                if (CarrierBundleInfoArray.Length>0)
+                {
+                    int index = CarrierBundleInfoArray.IndexOf("IntegratedCircuitCardIdentity");
+                    string ICCID = CarrierBundleInfoArray.Substring(index + 30, 20);
+                    ICCID_label.Text = ICCID;
+
+                }
+                
                 string SerialNumber = getInfo("ideviceinfo -k SerialNumber");
                 string RegionInfo = getInfo("ideviceinfo -k RegionInfo");
                 string ActivationState = getInfo("ideviceinfo -k ActivationState");
@@ -305,7 +694,6 @@ namespace AlamirMobileCDMA
                 imei_label.Text = imei;
                 IOSVer_label.Text = ProductVersion;
                 Sn_label.Text = SerialNumber;
-                ICCID_label.Text = ICCID;
                 region_label.Text = RegionInfo;
                 product_label.Text = ProductType;
 
@@ -447,7 +835,6 @@ namespace AlamirMobileCDMA
 
         private void bunifuProgressBar1_progressChanged(object sender, EventArgs e)
         {
-            bunifuProgressBar1.Value = e.ProgressPercentage;
 
         }
     }
