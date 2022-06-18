@@ -51,6 +51,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="about.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="about.Designer.cs">
+      <DependentUpon>about.cs</DependentUpon>
+    </Compile>
+    <Compile Include="backup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="backup.Designer.cs">
+      <DependentUpon>backup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="restore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="restore.Designer.cs">
+      <DependentUpon>restore.cs</DependentUpon>
+    </Compile>
     <Compile Include="update.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,20 +93,29 @@
     <Compile Include="device_info.Designer.cs">
       <DependentUpon>device_info.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="home.Designer.cs">
+      <DependentUpon>home.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="scan_device.cs">
+    <Compile Include="tools.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="scan_device.Designer.cs">
-      <DependentUpon>scan_device.cs</DependentUpon>
+    <Compile Include="tools.Designer.cs">
+      <DependentUpon>tools.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="about.resx">
+      <DependentUpon>about.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="backup.resx">
+      <DependentUpon>backup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="restore.resx">
+      <DependentUpon>restore.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="update.resx">
       <DependentUpon>update.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,8 +128,8 @@
     <EmbeddedResource Include="device_info.resx">
       <DependentUpon>device_info.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="home.resx">
+      <DependentUpon>home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -114,8 +141,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="scan_device.resx">
-      <DependentUpon>scan_device.cs</DependentUpon>
+    <EmbeddedResource Include="tools.resx">
+      <DependentUpon>tools.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -162,6 +189,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-update-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-phonelink-setup-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-data-backup-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-database-restore-48.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
