@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AlamirMobileCDMA
 {
-    public partial class scan_device : Form
+    public partial class tools : Form
     {
-        public scan_device()
+        public tools()
         {
             InitializeComponent();
         }

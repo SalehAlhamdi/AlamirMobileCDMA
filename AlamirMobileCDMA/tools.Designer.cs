@@ -1,6 +1,6 @@
 ﻿namespace AlamirMobileCDMA
 {
-    partial class scan_device
+    partial class tools
     {
         /// <summary>
         /// Required designer variable.
