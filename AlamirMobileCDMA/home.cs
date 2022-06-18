@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace AlamirMobileCDMA
 {
-    public partial class Form1 : Form
+    public partial class home : Form
     {
 
-        public Form1()
+        public home()
         {
             InitializeComponent();
         }
@@ -64,7 +64,7 @@ namespace AlamirMobileCDMA
 
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
         {
-            loadform(new scan_device());
+            loadform(new tools());
         }
 
         private void bunifuFlatButton3_Click(object sender, EventArgs e)
@@ -74,7 +74,7 @@ namespace AlamirMobileCDMA
 
         private void bunifuFlatButton5_Click(object sender, EventArgs e)
         {
-            ;
+            loadform(new about()); ;
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
@@ -114,6 +114,18 @@ namespace AlamirMobileCDMA
         private void bunifuFlatButton6_Click(object sender, EventArgs e)
         {
             loadform(new update());
+        }
+
+        private void bunifuFlatButton17_Click(object sender, EventArgs e)
+        {
+            loadform(new backup());
+
+        }
+
+        private void bunifuFlatButton18_Click(object sender, EventArgs e)
+        {
+            loadform(new restore());
+
         }
     }
 }
