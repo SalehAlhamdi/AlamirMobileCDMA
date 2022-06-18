@@ -1,6 +1,6 @@
 ﻿namespace AlamirMobileCDMA
 {
-    partial class Form1
+    partial class home
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(home));
             this.panel_side = new System.Windows.Forms.Panel();
+            this.bunifuFlatButton18 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuFlatButton17 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton6 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -65,6 +67,8 @@
             // panel_side
             // 
             this.panel_side.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
+            this.panel_side.Controls.Add(this.bunifuFlatButton18);
+            this.panel_side.Controls.Add(this.bunifuFlatButton17);
             this.panel_side.Controls.Add(this.bunifuFlatButton6);
             this.panel_side.Controls.Add(this.bunifuCustomLabel3);
             this.panel_side.Controls.Add(this.bunifuFlatButton1);
@@ -80,6 +84,80 @@
             this.panel_side.Name = "panel_side";
             this.panel_side.Size = new System.Drawing.Size(209, 781);
             this.panel_side.TabIndex = 0;
+            // 
+            // bunifuFlatButton18
+            // 
+            this.bunifuFlatButton18.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            this.bunifuFlatButton18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
+            this.bunifuFlatButton18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton18.BorderRadius = 7;
+            this.bunifuFlatButton18.ButtonText = "استعادة النسخة";
+            this.bunifuFlatButton18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton18.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton18.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton18.Iconimage = global::AlamirMobileCDMA.Properties.Resources.icons8_database_restore_48;
+            this.bunifuFlatButton18.Iconimage_right = null;
+            this.bunifuFlatButton18.Iconimage_right_Selected = null;
+            this.bunifuFlatButton18.Iconimage_Selected = null;
+            this.bunifuFlatButton18.IconMarginLeft = 0;
+            this.bunifuFlatButton18.IconMarginRight = 0;
+            this.bunifuFlatButton18.IconRightVisible = false;
+            this.bunifuFlatButton18.IconRightZoom = 0D;
+            this.bunifuFlatButton18.IconVisible = true;
+            this.bunifuFlatButton18.IconZoom = 90D;
+            this.bunifuFlatButton18.IsTab = true;
+            this.bunifuFlatButton18.Location = new System.Drawing.Point(24, 528);
+            this.bunifuFlatButton18.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.bunifuFlatButton18.Name = "bunifuFlatButton18";
+            this.bunifuFlatButton18.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
+            this.bunifuFlatButton18.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
+            this.bunifuFlatButton18.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
+            this.bunifuFlatButton18.selected = false;
+            this.bunifuFlatButton18.Size = new System.Drawing.Size(169, 57);
+            this.bunifuFlatButton18.TabIndex = 11;
+            this.bunifuFlatButton18.Text = "استعادة النسخة";
+            this.bunifuFlatButton18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuFlatButton18.Textcolor = System.Drawing.Color.Silver;
+            this.bunifuFlatButton18.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton18.Click += new System.EventHandler(this.bunifuFlatButton18_Click);
+            // 
+            // bunifuFlatButton17
+            // 
+            this.bunifuFlatButton17.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            this.bunifuFlatButton17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
+            this.bunifuFlatButton17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton17.BorderRadius = 7;
+            this.bunifuFlatButton17.ButtonText = "النسخ الاحتياطي";
+            this.bunifuFlatButton17.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton17.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton17.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton17.Iconimage = global::AlamirMobileCDMA.Properties.Resources.icons8_data_backup_48;
+            this.bunifuFlatButton17.Iconimage_right = null;
+            this.bunifuFlatButton17.Iconimage_right_Selected = null;
+            this.bunifuFlatButton17.Iconimage_Selected = null;
+            this.bunifuFlatButton17.IconMarginLeft = 0;
+            this.bunifuFlatButton17.IconMarginRight = 0;
+            this.bunifuFlatButton17.IconRightVisible = false;
+            this.bunifuFlatButton17.IconRightZoom = 0D;
+            this.bunifuFlatButton17.IconVisible = true;
+            this.bunifuFlatButton17.IconZoom = 90D;
+            this.bunifuFlatButton17.IsTab = true;
+            this.bunifuFlatButton17.Location = new System.Drawing.Point(24, 461);
+            this.bunifuFlatButton17.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.bunifuFlatButton17.Name = "bunifuFlatButton17";
+            this.bunifuFlatButton17.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
+            this.bunifuFlatButton17.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
+            this.bunifuFlatButton17.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
+            this.bunifuFlatButton17.selected = false;
+            this.bunifuFlatButton17.Size = new System.Drawing.Size(169, 57);
+            this.bunifuFlatButton17.TabIndex = 10;
+            this.bunifuFlatButton17.Text = "النسخ الاحتياطي";
+            this.bunifuFlatButton17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuFlatButton17.Textcolor = System.Drawing.Color.Silver;
+            this.bunifuFlatButton17.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton17.Click += new System.EventHandler(this.bunifuFlatButton17_Click);
             // 
             // bunifuFlatButton6
             // 
@@ -103,7 +181,7 @@
             this.bunifuFlatButton6.IconVisible = true;
             this.bunifuFlatButton6.IconZoom = 90D;
             this.bunifuFlatButton6.IsTab = true;
-            this.bunifuFlatButton6.Location = new System.Drawing.Point(24, 392);
+            this.bunifuFlatButton6.Location = new System.Drawing.Point(24, 325);
             this.bunifuFlatButton6.Margin = new System.Windows.Forms.Padding(3, 7, 3, 7);
             this.bunifuFlatButton6.Name = "bunifuFlatButton6";
             this.bunifuFlatButton6.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
@@ -173,12 +251,12 @@
             this.bunifuFlatButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.bunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton2.BorderRadius = 7;
-            this.bunifuFlatButton2.ButtonText = "فحص الجهاز";
+            this.bunifuFlatButton2.ButtonText = "ادوات النظام";
             this.bunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuFlatButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton2.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton2.Iconimage")));
+            this.bunifuFlatButton2.Iconimage = global::AlamirMobileCDMA.Properties.Resources.icons8_phonelink_setup_64;
             this.bunifuFlatButton2.Iconimage_right = null;
             this.bunifuFlatButton2.Iconimage_right_Selected = null;
             this.bunifuFlatButton2.Iconimage_Selected = null;
@@ -189,7 +267,7 @@
             this.bunifuFlatButton2.IconVisible = true;
             this.bunifuFlatButton2.IconZoom = 90D;
             this.bunifuFlatButton2.IsTab = true;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(24, 252);
+            this.bunifuFlatButton2.Location = new System.Drawing.Point(22, 394);
             this.bunifuFlatButton2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.bunifuFlatButton2.Name = "bunifuFlatButton2";
             this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
@@ -198,7 +276,7 @@
             this.bunifuFlatButton2.selected = false;
             this.bunifuFlatButton2.Size = new System.Drawing.Size(169, 57);
             this.bunifuFlatButton2.TabIndex = 1;
-            this.bunifuFlatButton2.Text = "فحص الجهاز";
+            this.bunifuFlatButton2.Text = "ادوات النظام";
             this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuFlatButton2.Textcolor = System.Drawing.Color.Silver;
             this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -300,7 +378,7 @@
             this.bunifuFlatButton3.IconVisible = true;
             this.bunifuFlatButton3.IconZoom = 90D;
             this.bunifuFlatButton3.IsTab = true;
-            this.bunifuFlatButton3.Location = new System.Drawing.Point(24, 321);
+            this.bunifuFlatButton3.Location = new System.Drawing.Point(24, 254);
             this.bunifuFlatButton3.Margin = new System.Windows.Forms.Padding(3, 7, 3, 7);
             this.bunifuFlatButton3.Name = "bunifuFlatButton3";
             this.bunifuFlatButton3.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
@@ -785,7 +863,7 @@
             this.bunifuFlatButton15.Textcolor = System.Drawing.Color.Silver;
             this.bunifuFlatButton15.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // Form1
+            // home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -798,7 +876,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "Form1";
+            this.Name = "home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -841,6 +919,8 @@
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton16;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator4;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton6;
+        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton17;
+        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton18;
     }
 }
 

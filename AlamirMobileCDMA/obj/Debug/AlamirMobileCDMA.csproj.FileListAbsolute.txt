@@ -3,7 +3,6 @@ C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\bin\Debug\
 C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\bin\Debug\AlamirMobileCDMA.pdb
 C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\bin\Debug\Bunifu_UI_v1.5.3.dll
 C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.csprojAssemblyReference.cache
-C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.Form1.resources
 C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.Properties.Resources.resources
 C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.csproj.GenerateResource.cache
 C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.csproj.CoreCompileInputs.cache
@@ -13,5 +12,9 @@ C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\
 C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.active_cdma.resources
 C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.dashboard.resources
 C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.device_info.resources
-C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.scan_device.resources
 C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.update.resources
+C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.about.resources
+C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.home.resources
+C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.tools.resources
+C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.backup.resources
+C:\Users\Administrator\source\repos\AlamirMobileCDMA\AlamirMobileCDMA\obj\Debug\AlamirMobileCDMA.restore.resources

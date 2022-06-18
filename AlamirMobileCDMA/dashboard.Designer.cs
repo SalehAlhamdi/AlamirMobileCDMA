@@ -68,11 +68,10 @@
             this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuCustomLabel4.Location = new System.Drawing.Point(11, 80);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(414, 333);
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(414, 296);
             this.bunifuCustomLabel4.TabIndex = 16;
             this.bunifuCustomLabel4.Text = "Alamir Mobile IOS CDMA\r\n\r\n*SCAN IPHONE\r\n*UPDATE IPHONE IOS\r\n*FORMAT IPHONE\r\n*REPA" +
-    "IR IPHONE\r\n*BYBASS ICLOUD 5s-X\r\n*ACTIVE CDMA YEMEN MOBILE\r\nAND OTHER FEATURES..." +
-    "";
+    "IR IPHONE\r\n*ACTIVE CDMA YEMEN MOBILE\r\nAND OTHER FEATURES...";
             // 
             // bunifuCustomLabel2
             // 

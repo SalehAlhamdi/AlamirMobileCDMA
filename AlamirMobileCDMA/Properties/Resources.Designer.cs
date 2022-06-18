@@ -83,6 +83,46 @@ namespace AlamirMobileCDMA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_data_backup_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-data-backup-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_data_backup_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-data-backup-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_data_backup_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-data-backup-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_database_restore_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-database-restore-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_facebook_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-facebook-48", resourceCulture);
@@ -116,6 +156,16 @@ namespace AlamirMobileCDMA.Properties {
         internal static System.Drawing.Bitmap icons8_instagram_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-instagram-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_phonelink_setup_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-phonelink-setup-64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
