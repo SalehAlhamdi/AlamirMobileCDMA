@@ -6,6 +6,8 @@
 
 This Programs helps you to know information about your iPhone it comes with many features to communicate with, and Make CDMA Yemen Mobile Works in any iPhone using this Tool, region of your iPhone ,etc.. .
 
+The Tool is still **WIP** .
+
 This Tool use `ibimobiledevice` library  that compiled From **C** language 
 
 ### Features
